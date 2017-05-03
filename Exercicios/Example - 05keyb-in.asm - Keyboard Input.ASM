@@ -6,8 +6,6 @@ Rep:
 	IN	00	; Wait for key press - Store it in AL.
 	CMP	AL,0D	; Was it the Enter key? (ASCII 0D)
 	MOV	[C0],AL	; 
-	CMP	BL,0D	;
-	MOV	[C1],BL	;
 	JNZ	Rep	; No - jump back.  Yes - end.
 
 END
